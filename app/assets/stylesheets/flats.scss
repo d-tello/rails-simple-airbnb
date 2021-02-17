@@ -1,0 +1,21 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.one-edge-shadow {
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.map {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-show-card {
+    background: #F8F9FA;
+    padding: 20px;
+    margin-bottom: 20px;
+     box-shadow: 0 8px 6px -6px black;
+    border-radius: 3px;
+}
