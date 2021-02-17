@@ -1,20 +1,30 @@
-<div class="map" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')"></div>
+<div class="map" style="background-image: url('/assets/map.png')"></div>
 <div class="container">
   <div class="row">
     <div class="col-8">
       <div class="flat-show-card">
-        <h1><%= @flat.name %></h1>
-        <p class="flat-show-address"><%= @flat.address %></p>
+        <h1>
+          <%= @flat.name %>
+        </h1>
+        <p class="flat-show-address">
+          <%= @flat.address %>
+        </p>
       </div>
       <div class="flat-show-card">
         <h3>A bit more about this flat...</h3>
-        <p><%= @flat.description %></p>
-        <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=10 Clifton Gardens London W9 1DT&amp;zoom=13&amp;scale=2&amp;size=1000x1000&amp;maptype=roadmap&amp;markers=color:red%7C10 Clifton Gardens London W9 1DT&amp;key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div>
+        <p>
+          <%= @flat.description %>
+        </p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4093428311203!2d-0.18527028422942!3d51.524051479637826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761aa8b8a56fab%3A0x81d846cf9d085828!2s10%20Clifton%20Gardens%2C%20Little%20Venice%2C%20London%20W9%201DT%2C%20Regno%20Unito!5e0!3m2!1sit!2sde!4v1613576027355!5m2!1sit!2sde" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>      </div>
+      <div class="flat-show-card">
+        <h3>Details</h3>
+        <i class="fas fa-user-friends">
+          <%= @flat.number_of_guests %></i>
+        <i class="fas fa-euro-sign">
+          <%= @flat.price_per_night %></i>
       </div>
     </div>
     <div class="col-4">
-
     </div>
   </div>
-  <%= link_to 'Back', flats_path, class: "btn btn-light" %>
 </div>
